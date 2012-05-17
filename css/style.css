@@ -1,0 +1,46 @@
+body{
+	background : #c0c0c0;
+	margin :0%;
+	padding: 0%;
+	font-family :Ubuntu ,sans-serif;
+}
+#web{
+	margin:0px;
+	margin-left: 10%;
+	margin-right :10%;
+	//border-left :1px solid black;
+	//border-right :1px solid black;
+	width : 80%;
+	height:100%;
+	background:white;
+	padding-top:10px;
+
+}
+#web ul{
+		background : #BDBDBD;
+		-webkit-border-radius : 20px 20px 20px 20px;
+		-moz-border-radius:  20px 20px 20px 20px ;
+		position:relative;
+		left:3%;
+		width:85%;
+		background : -webkit-gradient(linear, left top, left bottom,from(#BDBDBD),color-stop(0.5,#2E2E2E),to(#848484));
+		background : -moz-linear-gradient(top,#BDBDBD,#2E2E2E 50% ,#848484);
+		font :  13px/19px "Ubuntu", sans-serif;
+		-webkit-box-shadow:rgba(0,0,0,0.3) 0 1px 2px;
+}
+#web ul li{
+	display: inline-block;
+	text-decoration : none;
+	padding : 10px;
+	padding-top:0.5%;
+	padding-bottom:0.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding -left: 40px;
+	//background : #292929;
+	color : white;
+	//border-right : 1px solid #BDBDBD;
+}
+#web ul li:hover{
+background :black;
+}
