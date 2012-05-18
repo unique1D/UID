@@ -1,5 +1,5 @@
 var i=1;
-function click(){
+function clicked(){
 		if(i==1){
 			$('#login').animate({
 				"left": "74%"
@@ -25,10 +25,11 @@ function click(){
 }
 $(document).ready(function(){
 	$('#lbutton').click(function(){
-		click();
+		clicked();
 	});
-	$('#lb').hover(function(){
-		click();
+	$('#lb').click(function(e){
+		e.preventDefault();
+		clicked();
 	});
 
 });
