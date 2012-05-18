@@ -1,6 +1,5 @@
 var i=1;
-$(document).ready(function(){
-	$('#lbutton').click(function(){
+function click(){
 		if(i==1){
 			$('#login').animate({
 				"left": "74%"
@@ -12,6 +11,7 @@ $(document).ready(function(){
 			$('#lbutton').css('background','#AEB404');
 			document.getElementById('lbutton').value="BACK";
 			i=0;
+			return;
 		}
 		else{
 			$('#login').animate({
@@ -20,6 +20,15 @@ $(document).ready(function(){
 			$('#lbutton').css('background','#FF8000');
 			document.getElementById('lbutton').value="LOGIN";
 			i=1;
+			return;
 		}
+}
+$(document).ready(function(){
+	$('#lbutton').click(function(){
+		click();
 	});
+	$('#lb').hover(function(){
+		click();
+	});
+
 });
