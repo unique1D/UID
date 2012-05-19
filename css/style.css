@@ -78,7 +78,7 @@ background :black;
 	margin :0px;
 	padding : 0px;
 	width : 50px;
-	height: 159px;
+	height: 167px;
 	background :#FF8000;
 	border-color :transparent;
 	-webkit-border-radius : 20px 0px 0px 20px;
@@ -101,4 +101,25 @@ background :black;
 	top : 1px; 
 	left : 50px;
 	display : none;
+	background : #8A4B08;
+}
+#loginbox table tr{
+	padding : 20px;
+}
+#loginbox  #textb:focus{
+	border: 1px solid blue;
+	box-shadow: 0 0 10px blue;
+}
+.button {
+	padding : 5px;
+	background :#0080FF;
+	color : white;
+	width:100px;
+	-webkit-border-radius : 10px 10px 10px 10px;
+	-moz-border-radius : 10px 10px 10px 10px ;
+	border-color :transparent;
+}
+
+.button:hover {
+	background:#f00;
 }

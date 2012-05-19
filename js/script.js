@@ -8,6 +8,8 @@ function clicked(){
 			console.log("hello");
 			$('#lbutton').css('background','#AEB404');
 			document.getElementById('lbutton').value="BACK";
+			$('body').css('overflow-x','hidden');
+			$('body').css('overflow-y','hidden');
 			i=0;
 			return;
 		}
@@ -17,6 +19,8 @@ function clicked(){
 			});
 			$('#lbutton').css('background','#FF8000');
 			document.getElementById('lbutton').value="LOGIN";
+			$('body').css('overflow-x','visible');
+			$('body').css('overflow-x','visible');
 			i=1;
 			return;
 
@@ -39,6 +43,7 @@ function focused(){
 		"width" : "170px"
 	},"slow");
 	$('#text').css('background','#F7F8E0');
+	$('#text').placeHolder = "Search";
 }
 function blurred(){
 	$('#text').animate({
