@@ -1,11 +1,9 @@
 var i=1;
 function clicked(){
 		if(i==1){
+			$('#loginbox').css('display','inline');
 			$('#login').animate({
-				"left": "74%"
-			});
-			$('#web').animate({
-				"left" : "67.5%"
+				"left": "1000px"
 			});
 			console.log("hello");
 			$('#lbutton').css('background','#AEB404');
@@ -15,17 +13,20 @@ function clicked(){
 		}
 		else{
 			$('#login').animate({
-				"left": "96.5%"
+				"left": "1313px"
 			});
 			$('#lbutton').css('background','#FF8000');
 			document.getElementById('lbutton').value="LOGIN";
 			i=1;
 			return;
+
 		}
 }
 $(document).ready(function(){
 	$('#lbutton').click(function(){
 		clicked();
+		if(i==1)
+		setTimeout(function(){$('#loginbox').css('display','none');},500);
 	});
 	$('#lb').click(function(e){
 		e.preventDefault();
@@ -33,3 +34,15 @@ $(document).ready(function(){
 	});
 
 });
+function focused(){
+	$('#text').animate({
+		"width" : "170px"
+	},"slow");
+	$('#text').css('background','#F7F8E0');
+}
+function blurred(){
+	$('#text').animate({
+		"width" : "100px"
+	},"slow");
+	$('#text').css('background','#A4A4A4');
+}

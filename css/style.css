@@ -7,20 +7,17 @@ body{
 	margin :0%;
 	padding: 0%;
 	font-family :Ubuntu ,sans-serif;
-	overflow-y:hidden;
-	overflow-x : hidden;
 }
 #web{
 	margin:0px;
-	margin-left: 10%;
-	margin-right :10%;
-	width : 80%;
-	height:100%;
+	width : 1000px;
+	height :650px;
 	background:white;
 	padding-top:10px;
-	display : inline-block;
+	display :relative;
 	margin-bottom: 0px;
-
+	position :relative;
+	left : 150px;
 }
 #web ul{
 		background : #BDBDBD;
@@ -28,7 +25,7 @@ body{
 		-moz-border-radius:  20px 20px 20px 20px ;
 		position:relative;
 		left:3%;
-		width:85%;
+		width: 900px;
 		background : -webkit-gradient(linear, left top, left bottom,from(#BDBDBD),color-stop(0.5,#2E2E2E),to(#848484));
 		background : -moz-linear-gradient(top,#BDBDBD,#2E2E2E 50% ,#848484);
 		font :  13px/19px "Ubuntu", sans-serif;
@@ -40,8 +37,8 @@ body{
 	padding : 10px;
 	padding-top:0.5%;
 	padding-bottom:0.5%;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
 	padding -left: 40px;
 	color : white;
 	-webkit-border-radius : 20px 20px 20px 20px;
@@ -50,9 +47,21 @@ body{
 #web ul li:hover{
 background :black;
 }
+#web ul li:last-child:hover{
+	background : transparent;
+}
 #web ul li a{
 	text-decoration:none;
 	color : white;
+}
+/*---------------------Text Box----------------------------------------------*/
+
+#text {
+	-webkit-border-radius : 10px 10px 10px 10px;
+	-moz-border-radius : 10px 10px 10px 10px;
+	border-color : transparent;
+	width : 100px;
+	background : #A4A4A4;
 }
 /* -------- CSS for Login  Window----------------------------------------*/
 
@@ -61,8 +70,8 @@ background :black;
 	margin : 0px;
 	padding : 0px;
 	position : absolute;
-	left : 96.5%;
-	top : 35%;
+	left : 1313px;
+	top : 224px;
 }
 
 #lbutton{
@@ -82,14 +91,14 @@ background :black;
 	margin:0px;
 	border : 1px solid black;
 	width : 250px;
-
 	padding : 88%;
 	-moz-padding-end: 90%;
 	-webkit-border-radius : 0px 20px 20px 0px;
 	-moz-border-radius:0px 20px 20px 0px;
 	display : inline-block;
-	position :absolute;
+	position : absolute;
 	border-left : 0px;
 	top : 1px; 
 	left : 50px;
+	display : none;
 }
