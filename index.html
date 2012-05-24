@@ -1,9 +1,11 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 <body>
 	<div id="web">
@@ -13,7 +15,7 @@
 			<ul>
 				<li>Home</li>
 				<li><a href="" id="lb" >Login</a></li>
-				<li>Register</li>
+				<li><a href="#" id="register">Register</a></li>
 				<li>Nearest  Regional Offices</li>
 				<li>Contact Us</li>
 				<li><input type="text" onfocus="focused()" onBlur="blurred()" id="text"></li>
@@ -27,11 +29,34 @@
 		<input type="button" value="LOGIN" id="lbutton">
 		<div id="loginbox">
 			<table >
+				<form >
 				<tr><td>Username:</td><td><input type="text" id="textb"></td></tr>
 				<tr><td>Password:</td><td><input type="Password" id="textb"></td></tr>
-				<tr><td></td><td><input class="button" type="submit" value="login"></td></tr>
+				<tr><td></td><td><input  type="submit" value="login" class="btn btn-primary"></td></tr>
+				</form>
 			</table>
 		</div> 
 	</div>
+	<div id="registerbox">
+		<form class="well">
+			<table cellpadding="20px">
+			<tr><td><label for="username" class="span2">Username:</label></td>
+			<td><input type="text" id="username" ></td></tr>
+			<tr><td><label for="Password">Password:</label></td>
+			<td><input type="password" id="Password"></td></tr>
+			<tr><td><label for="ConfirmPassword">Confirm Password:</label></td>
+			<td><input type="password" id="ConfirmPassword"></td></tr>
+			<tr><td><label for="Email">Email-ID:</label></td>
+			<td><input type="email" id="Email"></td></tr>
+			<tr><td><label for="mobile">Mobile Number:</label></td>
+			<td><input type="text" id="mobile"></td></tr>
+			<tr>
+				<td><input type="button" class="btn btn-danger" value="Back" onClick="reToggle()"></td>
+				<td><input type="submit" class="btn btn-primary" value="Register"></td>
+			</tr>
+			</table>
+		</form>
+	</div>
+		
 </body>
 </html>

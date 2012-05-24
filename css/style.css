@@ -3,7 +3,8 @@
     padding: 0;
 }
 body{
-	background : #c0c0c0;
+	background : #778899;
+	//background : -webkit-gradient(linear,left top , left bottom,from(#8A0829),color-stop(0.8,#B18904));
 	margin :0%;
 	padding: 0%;
 	font-family :Ubuntu ,sans-serif;
@@ -12,12 +13,13 @@ body{
 	margin:0px;
 	width : 1000px;
 	height :650px;
-	background:white;
+	background : #F5F6CE;
 	padding-top:10px;
 	display :relative;
 	margin-bottom: 0px;
 	position :relative;
 	left : 150px;
+	-webkit-box-shadow:  0px 3px 10px 7px #E6E6FA;
 }
 #web ul{
 		background : #BDBDBD;
@@ -26,7 +28,8 @@ body{
 		position:relative;
 		left:3%;
 		width: 900px;
-		background : -webkit-gradient(linear, left top, left bottom,from(#BDBDBD),color-stop(0.5,#2E2E2E),to(#848484));
+		height : 30px;
+		background : -webkit-gradient(linear, left top, left bottom,from(#BDBDBD),color-stop(0.5,#2E2E2E));
 		background : -moz-linear-gradient(top,#BDBDBD,#2E2E2E 50% ,#848484);
 		font :  13px/19px "Ubuntu", sans-serif;
 		-webkit-box-shadow:rgba(0,0,0,0.3) 0 1px 2px;
@@ -78,7 +81,7 @@ background :black;
 	margin :0px;
 	padding : 0px;
 	width : 50px;
-	height: 167px;
+	height: 175px;
 	background :#FF8000;
 	border-color :transparent;
 	-webkit-border-radius : 20px 0px 0px 20px;
@@ -106,11 +109,7 @@ background :black;
 #loginbox table tr{
 	padding : 20px;
 }
-#loginbox  #textb:focus{
-	border: 1px solid blue;
-	box-shadow: 0 0 10px blue;
-}
-.button {
+/*.button {
 	padding : 5px;
 	background :#0080FF;
 	color : white;
@@ -122,4 +121,26 @@ background :black;
 
 .button:hover {
 	background:#f00;
+}
+*/
+/*-----------------------Registration Box--------------------------------------------------*/
+
+
+#registerbox{
+	margin:0px;
+	width : 1000px;
+	height :650px;
+	background:white;
+	padding-top:10px;
+	display :relative;
+	margin-bottom: 0px;
+	position :relative;
+	left : 150px;
+	display :none;
+}
+#registerbox .well table input {
+	height : 25px;
+}
+#registerbox .well table tr td{
+	padding : 10px;
 }

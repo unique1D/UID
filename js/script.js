@@ -1,4 +1,5 @@
 var i=1;
+var reg=1;
 function clicked(){
 		if(i==1){
 			$('#loginbox').css('display','inline');
@@ -36,6 +37,19 @@ $(document).ready(function(){
 		e.preventDefault();
 		clicked();
 	});
+	$('#register').click(function(){
+		$('#web').slideToggle('slow');
+		$('#registerbox').slideToggle('slow');	
+		if(reg==1)
+		{
+			$('#lbutton').css("display","none");
+			reg=0;
+		}
+		else{
+			$('#lbutton').css("display","inline");
+			reg=1;
+		}
+	});
 
 });
 function focused(){
@@ -50,4 +64,20 @@ function blurred(){
 		"width" : "100px"
 	},"slow");
 	$('#text').css('background','#A4A4A4');
+}
+function reToggle()
+{
+	$('#web').slideToggle('slow');
+	$('#registerbox').slideToggle('slow');
+	console.log(reg);
+	if(reg==1)
+	{
+		$('#lbutton').css("display","none");
+		reg=0;
+	}
+	else{
+		$('#lbutton').css("display","inline");
+		reg=1;
+		console.log(reg);
+	}	
 }
