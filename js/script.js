@@ -36,17 +36,20 @@ $(document).ready(function(){
 	$('#lb').click(function(e){
 		e.preventDefault();
 		clicked();
+		if(i==1)
+		setTimeout(function(){$('#loginbox').css('display','none');},500);
 	});
 	$('#register').click(function(){
 		$('#web').slideToggle('slow');
 		$('#registerbox').slideToggle('slow');	
 		if(reg==1)
 		{
-			$('#lbutton').css("display","none");
+			$('#login').css("display","none");
+			console.log("login1");
 			reg=0;
 		}
 		else{
-			$('#lbutton').css("display","inline");
+			$('#login').css("display","inline");
 			reg=1;
 		}
 	});
@@ -69,15 +72,19 @@ function reToggle()
 {
 	$('#web').slideToggle('slow');
 	$('#registerbox').slideToggle('slow');
+	console.log("login1");
 	console.log(reg);
 	if(reg==1)
 	{
-		$('#lbutton').css("display","none");
+		$('#login').css("display","none");
+		//$('#loginbox').css("display","none");
+		console.log("login");
 		reg=0;
 	}
 	else{
-		$('#lbutton').css("display","inline");
+		$('#login').css("display","inline");
+
 		reg=1;
-		console.log(reg);
+		console.log(reg+"adsfds");
 	}	
 }
