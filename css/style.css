@@ -3,7 +3,8 @@
     padding: 0;
 }
 body{
-	background : #778899;
+	background : #D9942D;
+	background : -webkit-gradient(linear,left top ,left bottom,from(#F3C37B),color-stop(0.3,#F79708),to(#D9942D));
 	margin :0%;
 	padding: 0%;
 	font-family :Ubuntu ,sans-serif;
@@ -12,7 +13,7 @@ body{
 	margin:0px;
 	width : 1000px;
 	height :650px;
-	background : #F5F6CE;
+	background : #F2F2F2;
 	padding-top:10px;
 	display :relative;
 	margin-bottom: 0px;
