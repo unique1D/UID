@@ -6,6 +6,7 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/validate.js"></script>
 </head>
 <body>
 	<div id="web">
@@ -38,12 +39,12 @@
 		</div> 
 	</div>
 	<div id="registerbox">
-		<form class="well">
+		<form class="well" name="register" method="post" action="registered.html" onSubmit="return validate()">
 			<table cellpadding="20px">
 			<tr><td><label for="username" class="span2">Username:</label></td>
 			<td><input type="text" id="username" ></td></tr>
 			<tr><td><label for="Password">Password:</label></td>
-			<td><input type="password" id="Password"></td></tr>
+			<td><input type="password" id="password"></td></tr>
 			<tr><td><label for="ConfirmPassword">Confirm Password:</label></td>
 			<td><input type="password" id="ConfirmPassword"></td></tr>
 			<tr><td><label for="Email">Email-ID:</label></td>

@@ -5,6 +5,11 @@
 body{
 	background : #D9942D;
 	background : -webkit-gradient(linear,left top ,left bottom,from(#F3C37B),color-stop(0.3,#F79708),to(#D9942D));
+	background-image: linear-gradient(bottom, rgb(61,121,95) 37%, rgb(92,158,124) 69%);
+	background-image: -o-linear-gradient(bottom, rgb(61,121,95) 37%, rgb(92,158,124) 69%);
+	background-image: -moz-linear-gradient(bottom, rgb(61,121,95) 37%, rgb(92,158,124) 69%);
+	background-image: -webkit-linear-gradient(bottom, rgb(61,121,95) 37%, rgb(92,158,124) 69%);
+	background-image: -ms-linear-gradient(bottom, rgb(61,121,95) 37%, rgb(92,158,124) 69%);
 	margin :0%;
 	padding: 0%;
 	font-family :Ubuntu ,sans-serif;
