@@ -1,56 +1,24 @@
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/validate.js"></script>
-</head>
-<body>
-	<div id="web">
-		<div id="header">
-		</div>
-		<div id="nav">
-			<ul>
-				<li>Home</li>
-				<li><a href="" id="lb" >Login</a></li>
-				<li><a href="#" id="register">Register</a></li>
-				<li>Nearest  Regional Offices</li>
-				<li>Contact Us</li>
-				<li><input type="text" onfocus="focused()" onBlur="blurred()" id="text"></li>
-			</ul>
-		</div>
-		<div id="">
-		</div>
+<?php require_once("includes/header.php") ; ?>
+		<div id="content">
+		</div><!---End of Content------>
 		
-	</div>
-	<div id="login">	
-		<input type="button" value="LOGIN" id="lbutton">
-		<div id="loginbox">
-			<table >
-				<form class="well">
-				<tr><td>Username:</td><td><input type="text" id="textb"></td></tr>
-				<tr><td>Password:</td><td><input type="Password" id="textb"></td></tr>
-				<tr><td></td><td><input  type="submit" value="login" class="btn btn-primary"></td></tr>
-				</form>
-			</table>
-		</div> 
-	</div>
+	</div><!----------------End  of Web-------------->
+
+<?php require_once("includes/login.php"); ?>
+
 	<div id="registerbox">
-		<form class="well" name="register" method="post" action="registered.html" onSubmit="return validate()">
+		<form class="well" name="register" method="post" action="registered.php" onSubmit="return validate()">
 			<table cellpadding="20px">
 			<tr><td><label for="username" class="span2">Username:</label></td>
-			<td><input type="text" id="username" ></td></tr>
+			<td><input type="text" id="username" name="username"></td></tr>
 			<tr><td><label for="Password">Password:</label></td>
-			<td><input type="password" id="password"></td></tr>
+			<td><input type="password" id="password" name="password"></td></tr>
 			<tr><td><label for="ConfirmPassword">Confirm Password:</label></td>
 			<td><input type="password" id="ConfirmPassword"></td></tr>
 			<tr><td><label for="Email">Email-ID:</label></td>
-			<td><input type="email" id="Email"></td></tr>
+			<td><input type="email" id="Email" name="Email"></td></tr>
 			<tr><td><label for="mobile">Mobile Number:</label></td>
-			<td><input type="text" id="mobile"></td></tr>
+			<td><input type="text" id="mobile" name="mobile"></td></tr>
 			<tr>
 				<td><input type="button" class="btn btn-danger" value="Back" onClick="reToggle()"></td>
 				<td><input type="submit" class="btn btn-primary" value="Register"></td>
@@ -59,5 +27,4 @@
 		</form>
 	</div>
 		
-</body>
-</html>
+<?php require_once("includes/footer.php"); ?>
