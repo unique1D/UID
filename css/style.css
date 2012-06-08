@@ -17,7 +17,7 @@ body{
 #web{
 	margin:0px;
 	width : 1000px;
-	height :650px;
+	height : 97%;
 	background : #F2F2F2;
 	padding-top:10px;
 	display :relative;
@@ -85,20 +85,22 @@ background :black;
 #lbutton{
 	margin :0px;
 	padding : 0px;
-	width : 50px;
-	height: 175px;
+	width : 52px;
+	height: 193px;
 	background :#FF8000;
 	border-color :transparent;
 	-webkit-border-radius : 20px 0px 0px 20px;
 	-moz-border-radius:20px 0px 0px 20px;
 	color : #170B3B;
 	display : inline-block;
+	margin-top :1px;
 }
 
 #loginbox{
 	margin:0px;
 	border : 1px solid black;
 	width : 250px;
+	height : 100px;
 	padding : 88%;
 	-moz-padding-end: 90%;
 	-webkit-border-radius : 0px 20px 20px 0px;
@@ -113,6 +115,23 @@ background :black;
 }
 #loginbox table tr{
 	padding : 20px;
+}
+#textb
+{
+	width :150px;
+	height : 20px;
+	padding-top : 10px;
+}
+
+#loginas
+{
+	width : 100px;
+	margin-top : 10px;
+
+}
+#lsubmit
+{
+	height : 31px;
 }
 /*.button {
 	padding : 5px;

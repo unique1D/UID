@@ -7,7 +7,8 @@ function clicked(){
 				"left": "1000px"
 			});
 			$('#lbutton').css('background','#AEB404');
-			document.getElementById('lbutton').value="BACK";
+			document.getElementById('lbutton').value="  BACK  ";
+			// $('#lbutton').css('width','55');
 			$('body').css('overflow-x','hidden');
 			$('body').css('overflow-y','hidden');
 			i=0;
